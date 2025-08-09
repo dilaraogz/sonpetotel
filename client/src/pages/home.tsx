@@ -152,7 +152,7 @@ export default function PetHotelHomePage() {
               className="bg-pet-accent text-white px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-2xl"
             >
               <a 
-                href="tel:+905001234567"
+                href="tel:+905444415213"
                 className="flex items-center space-x-3"
               >
                 <Phone className="text-xl" />
@@ -357,8 +357,8 @@ export default function PetHotelHomePage() {
                   <Phone className="text-2xl text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-pet-brown-dark">Telefon</h3>
-                <a href="tel:+905001234567" className="text-lg text-pet-brown-dark opacity-90 hover:opacity-100 transition-opacity">
-                  +90 500 123 45 67
+                <a href="tel:+905444415213" className="text-lg text-pet-brown-dark opacity-90 hover:opacity-100 transition-opacity">
+                  0544 441 52 13
                 </a>
               </div>
               
@@ -398,7 +398,7 @@ export default function PetHotelHomePage() {
                 className="bg-pet-primary text-white px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl hover:bg-pet-accent"
               >
                 <a 
-                  href="tel:+905001234567"
+                  href="tel:+905444415213"
                   className="flex items-center space-x-3"
                 >
                   <Phone className="text-xl" />
@@ -452,7 +452,7 @@ export default function PetHotelHomePage() {
                 <FaInstagram className="text-2xl" />
               </a>
               <a 
-                href="tel:+905001234567"
+                href="tel:+905444415213"
                 className="text-pet-cream opacity-70 hover:text-pet-secondary hover:opacity-100 transition-all"
               >
                 <Phone className="text-2xl" />

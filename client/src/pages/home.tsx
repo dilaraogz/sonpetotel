@@ -186,7 +186,7 @@ export default function PetHotelHomePage() {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">Konaklama</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Evcil dostlarınız için özel tasarlanmış konforlu odalar ve oyun alanları ile güvenli konaklama
+                  Evcil hayvanlarınız için uygun konforlu odalar ve oyun alanları ile güvenli konaklama
                 </p>
               </CardContent>
             </Card>
@@ -342,9 +342,9 @@ export default function PetHotelHomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="iletisim" className="py-20 bg-gradient-to-br from-pet-primary to-pet-accent">
+      <section id="iletisim" className="py-20 bg-gradient-to-br from-pet-cream to-pet-warm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center text-white">
+          <div className="text-center text-pet-brown-dark">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">İletişim</h2>
             <p className="text-xl opacity-90 mb-12 max-w-2xl mx-auto">
               Evcil dostunuz için rezervasyon yapmak veya detaylı bilgi almak için bize ulaşın
@@ -353,22 +353,22 @@ export default function PetHotelHomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               {/* Phone */}
               <div className="text-center">
-                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-pet-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <Phone className="text-2xl text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Telefon</h3>
-                <a href="tel:+905001234567" className="text-lg opacity-90 hover:opacity-100 transition-opacity">
+                <h3 className="text-xl font-semibold mb-2 text-pet-brown-dark">Telefon</h3>
+                <a href="tel:+905001234567" className="text-lg text-pet-brown-dark opacity-90 hover:opacity-100 transition-opacity">
                   +90 500 123 45 67
                 </a>
               </div>
               
               {/* Location */}
               <div className="text-center">
-                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-pet-accent rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="text-2xl text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Adres</h3>
-                <p className="text-lg opacity-90">
+                <h3 className="text-xl font-semibold mb-2 text-pet-brown-dark">Adres</h3>
+                <p className="text-lg text-pet-brown-dark opacity-90">
                   Balıkesir Merkez<br />
                   Pet Otel Kompleksi
                 </p>
@@ -376,15 +376,15 @@ export default function PetHotelHomePage() {
               
               {/* Instagram */}
               <div className="text-center">
-                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-pet-secondary rounded-full flex items-center justify-center mx-auto mb-4">
                   <FaInstagram className="text-2xl text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Instagram</h3>
+                <h3 className="text-xl font-semibold mb-2 text-pet-brown-dark">Instagram</h3>
                 <a 
                   href="https://instagram.com/balikesir.petoteli" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-lg opacity-90 hover:opacity-100 transition-opacity"
+                  className="text-lg text-pet-brown-dark opacity-90 hover:opacity-100 transition-opacity"
                 >
                   @balikesir.petoteli
                 </a>
@@ -395,7 +395,7 @@ export default function PetHotelHomePage() {
               <Button 
                 asChild
                 size="lg"
-                className="bg-pet-cream text-pet-brown-dark px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl hover:bg-pet-warm"
+                className="bg-pet-primary text-white px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl hover:bg-pet-accent"
               >
                 <a 
                   href="tel:+905001234567"

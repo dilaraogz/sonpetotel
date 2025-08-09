@@ -369,8 +369,7 @@ export default function PetHotelHomePage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-pet-brown-dark">Adres</h3>
                 <p className="text-lg text-pet-brown-dark opacity-90">
-                  Balıkesir Merkez<br />
-                  Pet Otel Kompleksi
+                  Balıkesir Merkez
                 </p>
               </div>
               

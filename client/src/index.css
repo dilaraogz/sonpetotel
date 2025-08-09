@@ -51,12 +51,14 @@
   --tracking-normal: 0em;
   --spacing: 0.25rem;
   
-  /* Pet Hotel Theme Colors */
-  --pet-primary: hsl(248 64% 57%);
-  --pet-secondary: hsl(38 94% 50%);
-  --pet-accent: hsl(159 100% 37%);
-  --pet-warm: hsl(48 100% 89%);
-  --pet-soft: hsl(210 40% 98%);
+  /* Pet Hotel Theme Colors - Based on Logo */
+  --pet-primary: hsl(25 65% 45%); /* Brown from logo */
+  --pet-secondary: hsl(38 94% 50%); /* Golden yellow accent */
+  --pet-accent: hsl(25 85% 35%); /* Darker brown for contrast */
+  --pet-warm: hsl(40 60% 88%); /* Cream/beige from logo background */
+  --pet-soft: hsl(40 50% 96%); /* Very light cream */
+  --pet-brown-dark: hsl(25 50% 25%); /* Dark brown for text/outlines */
+  --pet-cream: hsl(40 45% 90%); /* Main cream color */
 }
 
 .dark {
@@ -158,4 +160,20 @@
 
 .bg-pet-soft {
   background-color: var(--pet-soft);
+}
+
+.pet-brown-dark {
+  color: var(--pet-brown-dark);
+}
+
+.bg-pet-brown-dark {
+  background-color: var(--pet-brown-dark);
+}
+
+.pet-cream {
+  color: var(--pet-cream);
+}
+
+.bg-pet-cream {
+  background-color: var(--pet-cream);
 }

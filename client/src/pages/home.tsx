@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Phone, Home, Gamepad2, Utensils, Stethoscope, Check, MapPin, ExternalLink, Menu, X } from "lucide-react";
-import { FaInstagram, FaPaw } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import logoUrl from "@assets/otel1_1754752761581.jpg";
 
 export default function PetHotelHomePage() {
   const [isHeaderScrolled, setIsHeaderScrolled] = useState(false);
@@ -43,10 +44,12 @@ export default function PetHotelHomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-pet-primary rounded-full flex items-center justify-center">
-                <FaPaw className="text-white text-lg" />
-              </div>
-              <h1 className="text-xl font-bold text-gray-800">Balıkesir Pet Oteli</h1>
+              <img 
+                src={logoUrl} 
+                alt="Balıkesir Pet Oteli Logo" 
+                className="w-10 h-10 rounded-full object-cover"
+              />
+              <h1 className="text-xl font-bold text-pet-brown-dark">Balıkesir Pet Oteli</h1>
             </div>
             
             <nav className="hidden md:flex space-x-8">
@@ -339,7 +342,7 @@ export default function PetHotelHomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="iletisim" className="py-20 bg-gradient-to-br from-pet-primary to-purple-600">
+      <section id="iletisim" className="py-20 bg-gradient-to-br from-pet-primary to-pet-accent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">İletişim</h2>
@@ -392,7 +395,7 @@ export default function PetHotelHomePage() {
               <Button 
                 asChild
                 size="lg"
-                className="bg-white text-pet-primary px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl hover:bg-gray-50"
+                className="bg-pet-cream text-pet-brown-dark px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl hover:bg-pet-warm"
               >
                 <a 
                   href="tel:+905001234567"
@@ -405,7 +408,7 @@ export default function PetHotelHomePage() {
               <Button 
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl"
+                className="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl"
               >
                 <a 
                   href="https://instagram.com/balikesir.petoteli" 
@@ -423,16 +426,18 @@ export default function PetHotelHomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-pet-brown-dark text-pet-cream py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-pet-primary rounded-full flex items-center justify-center">
-                <FaPaw className="text-white text-xl" />
-              </div>
+              <img 
+                src={logoUrl} 
+                alt="Balıkesir Pet Oteli Logo" 
+                className="w-12 h-12 rounded-full object-cover"
+              />
               <h3 className="text-2xl font-bold">Balıkesir Pet Oteli</h3>
             </div>
-            <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
+            <p className="text-pet-cream opacity-80 mb-6 max-w-2xl mx-auto">
               Evcil dostlarınız için güvenli, konforlu ve sevgi dolu bir konaklama deneyimi. 
               Veteriner eşliğinde 7/24 profesyonel bakım hizmeti.
             </p>
@@ -442,20 +447,20 @@ export default function PetHotelHomePage() {
                 href="https://instagram.com/balikesir.petoteli" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-purple-400 transition-colors"
+                className="text-pet-cream opacity-70 hover:text-pet-secondary hover:opacity-100 transition-all"
               >
                 <FaInstagram className="text-2xl" />
               </a>
               <a 
                 href="tel:+905001234567"
-                className="text-gray-400 hover:text-green-400 transition-colors"
+                className="text-pet-cream opacity-70 hover:text-pet-secondary hover:opacity-100 transition-all"
               >
                 <Phone className="text-2xl" />
               </a>
             </div>
             
-            <div className="border-t border-gray-800 pt-8">
-              <p className="text-gray-500 text-sm">
+            <div className="border-t border-pet-primary pt-8">
+              <p className="text-pet-cream opacity-60 text-sm">
                 © 2024 Balıkesir Pet Oteli. Tüm hakları saklıdır. 
                 Veteriner eşliğinde güvenilir pet bakım hizmeti.
               </p>

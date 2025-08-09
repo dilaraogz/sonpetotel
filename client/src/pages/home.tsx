@@ -152,7 +152,7 @@ export default function PetHotelHomePage() {
               className="bg-pet-accent text-white px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-2xl"
             >
               <a 
-                href="tel:+905444415213"
+                href="tel:+905444152133"
                 className="flex items-center space-x-3"
               >
                 <Phone className="text-xl" />
@@ -221,15 +221,15 @@ export default function PetHotelHomePage() {
       </section>
 
       {/* Veterinary Care Section */}
-      <section id="veteriner" className="py-20 bg-gradient-to-br from-pet-primary to-purple-600">
+      <section id="veteriner" className="py-20 bg-gradient-to-br from-pet-warm to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-white bg-opacity-20 rounded-full mb-8">
+            <div className="text-pet-brown-dark">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-pet-primary rounded-full mb-8">
                 <Stethoscope className="text-3xl text-white" />
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Veteriner Eşliğinde Profesyonel Bakım</h2>
-              <p className="text-xl opacity-90 mb-8 leading-relaxed">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-pet-brown-dark">Veteriner Eşliğinde Profesyonel Bakım</h2>
+              <p className="text-xl opacity-90 mb-8 leading-relaxed text-pet-brown-dark">
                 Evcil hayvanınızın sağlığı bizim önceliğimiz. Deneyimli veteriner hekimlerimiz eşliğinde 7/24 sağlık kontrolü ve profesyonal bakım hizmeti sunuyoruz.
               </p>
               
@@ -238,19 +238,19 @@ export default function PetHotelHomePage() {
                   <div className="w-8 h-8 bg-pet-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <Check className="text-white text-sm" />
                   </div>
-                  <span className="text-lg">24 Saat Veteriner Kontrolü</span>
+                  <span className="text-lg text-pet-brown-dark">24 Saat Veteriner Kontrolü</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="w-8 h-8 bg-pet-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <Check className="text-white text-sm" />
                   </div>
-                  <span className="text-lg">Acil Durum Müdahale Sistemi</span>
+                  <span className="text-lg text-pet-brown-dark">Acil Durum Müdahale Sistemi</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <div className="w-8 h-8 bg-pet-accent rounded-full flex items-center justify-center flex-shrink-0">
                     <Check className="text-white text-sm" />
                   </div>
-                  <span className="text-lg">Sağlık Takip Raporları</span>
+                  <span className="text-lg text-pet-brown-dark">Sağlık Takip Raporları</span>
                 </div>
               </div>
             </div>
@@ -357,8 +357,8 @@ export default function PetHotelHomePage() {
                   <Phone className="text-2xl text-white" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-pet-brown-dark">Telefon</h3>
-                <a href="tel:+905444415213" className="text-lg text-pet-brown-dark opacity-90 hover:opacity-100 transition-opacity">
-                  0544 441 52 13
+                <a href="tel:+905444152133" className="text-lg text-pet-brown-dark opacity-90 hover:opacity-100 transition-opacity">
+                  0544 415 21 33
                 </a>
               </div>
               
@@ -397,7 +397,7 @@ export default function PetHotelHomePage() {
                 className="bg-pet-primary text-white px-8 py-4 text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl hover:bg-pet-accent"
               >
                 <a 
-                  href="tel:+905444415213"
+                  href="tel:+905444152133"
                   className="flex items-center space-x-3"
                 >
                   <Phone className="text-xl" />
@@ -451,7 +451,7 @@ export default function PetHotelHomePage() {
                 <FaInstagram className="text-2xl" />
               </a>
               <a 
-                href="tel:+905444415213"
+                href="tel:+905444152133"
                 className="text-pet-cream opacity-70 hover:text-pet-secondary hover:opacity-100 transition-all"
               >
                 <Phone className="text-2xl" />

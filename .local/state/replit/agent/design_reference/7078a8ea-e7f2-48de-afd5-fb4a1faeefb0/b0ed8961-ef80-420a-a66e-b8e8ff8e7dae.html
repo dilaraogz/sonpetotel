@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balıkesir Pet Oteli - Evcil Hayvanınız İçin Güvenli Konaklama</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pet-primary': '#6366F1',
+                        'pet-secondary': '#F59E0B',
+                        'pet-accent': '#10B981',
+                        'pet-warm': '#FEF3C7',
+                        'pet-soft': '#F8FAFC'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-inter bg-pet-soft">
+    
+    <!-- @COMPONENT: Header Navigation -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-pet-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-paw text-white text-lg"></i>
+                    </div>
+                    <h1 class="text-xl font-bold text-gray-800">Balıkesir Pet Oteli</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#hizmetler" class="text-gray-600 hover:text-pet-primary transition-colors">Hizmetlerimiz</a>
+                    <a href="#veteriner" class="text-gray-600 hover:text-pet-primary transition-colors">Veteriner Kontrolü</a>
+                    <a href="#iletisim" class="text-gray-600 hover:text-pet-primary transition-colors">İletişim</a>
+                </nav>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- @END_COMPONENT: Header Navigation -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- A happy golden retriever playing in a modern pet hotel facility with colorful toys -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
+             style="background-image: linear-gradient(rgba(99, 102, 241, 0.7), rgba(99, 102, 241, 0.7)), url('https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080');">
+        </div>
+        
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="animate-bounce mb-8">
+                <i class="fas fa-heart text-6xl text-pet-secondary"></i>
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                Evcil Hayvanınız <br>
+                <span class="text-pet-secondary">Güvenli Ellerde</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white mb-12 opacity-90 max-w-2xl mx-auto leading-relaxed">
+                Balıkesir'in en güvenilir pet otelinde, sevimli dostlarınız veteriner eşliğinde profesyonel bakım altında
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://instagram.com/balikesir.petoteli" 
+                   target="_blank" 
+                   class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-2xl flex items-center space-x-3">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span>Instagram'da Takip Edin</span>
+                </a>
+                <a href="tel:+905001234567" 
+                   class="bg-pet-accent text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-2xl flex items-center space-x-3">
+                    <i class="fas fa-phone text-xl"></i>
+                    <span>Hemen Arayın</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-pulse">
+            <i class="fas fa-chevron-down text-2xl"></i>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Services Section -->
+    <section id="hizmetler" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Hizmetlerimiz</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Evcil hayvanlarınız için özel olarak tasarlanmış konforlu ve güvenli ortamda profesyonel bakım hizmetleri
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-pet-warm rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-pet-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Konaklama</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Evcil dostlarınız için özel tasarlanmış konforlu odalar ve oyun alanları ile güvenli konaklama
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-pet-warm rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-pet-accent rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-gamepad text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Oyun & Aktivite</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Günlük oyun saatleri, sosyalizasyon aktiviteleri ve eğlenceli zaman geçirme imkanları
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-pet-warm rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-pet-secondary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-utensils text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Beslenme</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Özel beslenme programları ve sağlıklı mama seçenekleri ile dengeli beslenme
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Services Section -->
+
+    <!-- @COMPONENT: Veterinary Care Section -->
+    <section id="veteriner" class="py-20 bg-gradient-to-br from-pet-primary to-purple-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-white bg-opacity-20 rounded-full mb-8">
+                        <i class="fas fa-stethoscope text-3xl text-white"></i>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Veteriner Eşliğinde Profesyonel Bakım</h2>
+                    <p class="text-xl opacity-90 mb-8 leading-relaxed">
+                        Evcil hayvanınızın sağlığı bizim önceliğimiz. Deneyimli veteriner hekimlerimiz eşliğinde 7/24 sağlık kontrolü ve profesyonal bakım hizmeti sunuyoruz.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-8 h-8 bg-pet-accent rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-lg">24 Saat Veteriner Kontrolü</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-8 h-8 bg-pet-accent rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-lg">Acil Durum Müdahale Sistemi</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-8 h-8 bg-pet-accent rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-lg">Sağlık Takip Raporları</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- A professional veterinarian examining a cute cat in a modern clinic setting -->
+                    <img src="https://pixabay.com/get/g102efe158f6c52312f2d858e0f53f323c80c9b4877073826af8fb76b60a30008f642d4bad795441090cba39fbdfd580c92a6b106f6ce4c3f0ee180d6943c8e24_1280.jpg" 
+                         alt="Veteriner muayenesi" 
+                         class="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-300" />
+                    <div class="absolute -bottom-4 -right-4 bg-pet-secondary text-white p-6 rounded-2xl shadow-2xl">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold">7/24</div>
+                            <div class="text-sm opacity-90">Veteriner Hizmeti</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Veterinary Care Section -->
+
+    <!-- @COMPONENT: Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Mutlu Anılar</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Instagram hesabımızdan sevimli dostlarımızın keyifli anlarına göz atın
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Gallery Image 1 -->
+                <!-- A group of happy dogs playing together in a spacious indoor play area -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Mutlu köpekler oyun alanında" 
+                         class="w-full h-64 object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl"></i>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 2 -->
+                <!-- A cozy cat lounge with comfortable beds and climbing trees -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Rahat kedi dinlenme alanı" 
+                         class="w-full h-64 object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl"></i>
+                    </div>
+                </div>
+
+                <!-- Gallery Image 3 -->
+                <!-- A modern pet hotel room with comfortable bedding and toys -->
+                <div class="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
+                         alt="Modern pet hotel odası" 
+                         class="w-full h-64 object-cover" />
+                    <div class="absolute inset-0 bg-black bg-opacity-30 opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <i class="fab fa-instagram text-white text-3xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="https://instagram.com/balikesir.petoteli" 
+                   target="_blank" 
+                   class="inline-flex items-center space-x-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-10 py-4 rounded-full text-lg font-semibold hover:scale-105 transform transition-all duration-300 shadow-xl">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span>@balikesir.petoteli</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Gallery Section -->
+
+    <!-- @COMPONENT: Contact Section -->
+    <section id="iletisim" class="py-20 bg-gradient-to-br from-gray-50 to-pet-warm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">İletişim</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Evcil dostunuz için rezervasyon yapmak veya daha fazla bilgi almak için bizimle iletişime geçin
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-pet-primary rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Telefon</h3>
+                                <p class="text-gray-600">Hemen arayın ve rezervasyon yapın</p>
+                            </div>
+                        </div>
+                        <a href="tel:+905001234567" 
+                           class="text-3xl font-bold text-pet-primary hover:text-pet-secondary transition-colors">
+                            +90 500 123 45 67
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                                <i class="fab fa-instagram text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Instagram</h3>
+                                <p class="text-gray-600">Güncel fotoğraflar ve videolar</p>
+                            </div>
+                        </div>
+                        <a href="https://instagram.com/balikesir.petoteli" 
+                           target="_blank" 
+                           class="text-2xl font-bold text-purple-600 hover:text-pink-600 transition-colors flex items-center space-x-2">
+                            <span>@balikesir.petoteli</span>
+                            <i class="fas fa-external-link-alt text-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="w-16 h-16 bg-pet-accent rounded-full flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Konum</h3>
+                                <p class="text-gray-600">Balıkesir merkezde hizmet veriyoruz</p>
+                            </div>
+                        </div>
+                        <p class="text-xl text-gray-700 font-semibold">Balıkesir, Türkiye</p>
+                    </div>
+                </div>
+
+                <!-- Visual Element -->
+                <div class="relative">
+                    <!-- A heartwarming scene of various pets (dogs and cats) sitting together looking happy and well-cared for -->
+                    <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                         alt="Mutlu evcil hayvanlar" 
+                         class="rounded-2xl shadow-2xl w-full h-full object-cover" />
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-pet-primary via-transparent to-transparent opacity-60 rounded-2xl"></div>
+                    
+                    <div class="absolute bottom-8 left-8 text-white">
+                        <h3 class="text-3xl font-bold mb-2">Sevgi Dolu Bakım</h3>
+                        <p class="text-lg opacity-90">Evcil dostlarınız bizimle güvende</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-6">
+                    <div class="w-12 h-12 bg-pet-primary rounded-full flex items-center justify-center">
+                        <i class="fas fa-paw text-white text-xl"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Balıkesir Pet Oteli</h2>
+                </div>
+                
+                <p class="text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Evcil hayvanınızın mutluluğu ve sağlığı için veteriner eşliğinde profesyonel bakım hizmeti sunuyoruz.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                    <a href="https://instagram.com/balikesir.petoteli" 
+                       target="_blank" 
+                       class="flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 rounded-full hover:scale-105 transform transition-all duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                        <span>@balikesir.petoteli</span>
+                    </a>
+                    <a href="tel:+905001234567" 
+                       class="flex items-center space-x-2 bg-pet-accent px-6 py-3 rounded-full hover:scale-105 transform transition-all duration-300">
+                        <i class="fas fa-phone"></i>
+                        <span>+90 500 123 45 67</span>
+                    </a>
+                </div>
+
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400 text-sm">
+                        © 2024 Balıkesir Pet Oteli. Tüm hakları saklıdır. Veteriner kontrolünde güvenli hizmet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- JavaScript -->
+    <script>
+        (function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerOffset = 80;
+                        const elementPosition = target.offsetTop;
+                        const offsetPosition = elementPosition - headerOffset;
+
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Header background on scroll
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                    header.style.backdropFilter = 'blur(10px)';
+                } else {
+                    header.style.backgroundColor = 'white';
+                    header.style.backdropFilter = 'none';
+                }
+            });
+
+            // Instagram redirect tracking
+            document.querySelectorAll('a[href*="instagram.com/balikesir.petoteli"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    // TODO: Add analytics tracking for Instagram clicks
+                    console.log('Instagram link clicked');
+                });
+            });
+
+            // Phone call tracking
+            document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    // TODO: Add analytics tracking for phone calls
+                    console.log('Phone call initiated');
+                });
+            });
+
+            // Mobile menu toggle functionality (basic implementation)
+            const mobileMenuButton = document.querySelector('header button');
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // TODO: Implement mobile menu toggle
+                    console.log('Mobile menu toggle clicked');
+                });
+            }
+        })();
+    </script>
+
+</body>
+</html>
